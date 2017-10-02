@@ -9,7 +9,7 @@ var clozeCounter = 0;
 var saveCard = function(type, card) {
  
  	var fileNameBasic = "basic.txt";
- 	var fileNameCloze = "cloze.txt"
+ 	var fileNameCloze = "cloze.txt";
 
  	if (type === "Basic") {
 		fs.appendFile(fileNameBasic, card.front+"\n"+card.back+"\n\n", function(err) {    
